@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/psr_generator
+   */site-packages/psr_generator
+
+[run]
+branch = true
+source =
+    psr_generator
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
