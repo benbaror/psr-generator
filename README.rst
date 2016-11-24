@@ -29,31 +29,11 @@ Overview
 
 .. |coveralls| image:: https://coveralls.io/repos/benbaror/psr-generator/badge.svg?branch=master&service=github
     :alt: Coverage Status
-    :target: https://coveralls.io/r/benbaror/psr-generator
+    :target: https://coveralls.io/github/benbaror/psr-generator
 
 .. |codecov| image:: https://codecov.io/github/benbaror/psr-generator/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/benbaror/psr-generator
-
-.. |version| image:: https://img.shields.io/pypi/v/psr-generator.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/psr-generator
-
-.. |downloads| image:: https://img.shields.io/pypi/dm/psr-generator.svg?style=flat
-    :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/psr-generator
-
-.. |wheel| image:: https://img.shields.io/pypi/wheel/psr-generator.svg?style=flat
-    :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/psr-generator
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/psr-generator.svg?style=flat
-    :alt: Supported versions
-    :target: https://pypi.python.org/pypi/psr-generator
-
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/psr-generator.svg?style=flat
-    :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/psr-generator
 
 
 .. end-badges
