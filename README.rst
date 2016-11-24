@@ -15,8 +15,8 @@ Overview
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
-.. |docs| image:: https://readthedocs.org/projects/psr-generator/badge/?style=flat
-    :target: https://readthedocs.org/projects/psr-generator
+.. |docs| image:: https://readthedocs.org/projects/psr-generator/badge/?version=latest
+    :target: http://psr-generator.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
 .. |travis| image:: https://travis-ci.org/benbaror/psr-generator.svg?branch=master
@@ -27,9 +27,9 @@ Overview
     :alt: Requirements Status
     :target: https://requires.io/github/benbaror/psr-generator/requirements/?branch=master
 
-.. |coveralls| image:: https://coveralls.io/repos/benbaror/psr-generator/badge.svg?branch=master&service=github
+.. |coveralls| image:: https://coveralls.io/repos/github/benbaror/psr-generator/badge.svg?branch=master
     :alt: Coverage Status
-    :target: https://coveralls.io/github/benbaror/psr-generator
+    :target: https://coveralls.io/github/benbaror/psr-generator?branch=master
 
 .. |codecov| image:: https://codecov.io/github/benbaror/psr-generator/coverage.svg?branch=master
     :alt: Coverage Status
@@ -52,7 +52,7 @@ Installation
 Documentation
 =============
 
-https://psr-generator.readthedocs.io/
+https://psr-generator.readthedocs.io/en/latest/
 
 Development
 ===========
