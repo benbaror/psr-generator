@@ -66,6 +66,7 @@ setup(
     ],
     install_requires=[
         'click',
+        'galpy',
     ],
     extras_require={
         # eg:
