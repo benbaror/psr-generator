@@ -13,6 +13,7 @@ def test_main():
 
 
 def test_pulsar():
-    tol = 1e-10
-    pulsar = Pulsar(vxvv=[25, 25, 1, 1, 0, 0], lb=True)
-    assert abs(pulsar.vll - 4.74047) < tol  # pi/3600/180 * (pc/km) * (s/yr)
+    tol = 1e-3
+    pulsar = Pulsar(1e-3, 0, 8.3, unit=['deg', 'deg', 'kpc'],
+                    frame='galactic')
+    assert all(abs(pulsar.galactocentric.cartesian.xyz.value) < tol)  # pi/3600/180 * (pc/km) * (s/yr)

@@ -66,7 +66,7 @@ setup(
     ],
     install_requires=[
         'click',
-        'galpy',
+        'astropy',
     ],
     extras_require={
         # eg:
