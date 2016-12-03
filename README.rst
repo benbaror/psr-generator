@@ -12,6 +12,8 @@ Overview
     * - tests
       - | |travis| |requires|
         | |coveralls| |codecov|
+    * - Powered py
+      - |astropy|
 ..    * - package
 ..      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
@@ -35,7 +37,9 @@ Overview
     :alt: Coverage Status
     :target: https://codecov.io/github/benbaror/psr-generator
 
-
+.. |astropy| image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
+    :alt:    powered by AstroPy
+    :target: http://www.astropy.org/
 .. end-badges
 
 Modelling of the Galactic radio pulsar population
