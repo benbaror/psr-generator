@@ -42,7 +42,7 @@ class GalacticDistribution(object):
         Parameters
         ----------
         size : int or tuple of ints, optional
-        Defining number of random variates (default is 1).
+               Defining number of random variates (default is 1).
         """
         self.set_params(params)
         size = np.atleast_1d(size)
@@ -50,6 +50,8 @@ class GalacticDistribution(object):
         z_rand = self._z_dist.rvs(size=size)*self.z0
         phi = rand(*size)*2*pi
         return np.array([r_rand*cos(phi), r_rand*sin(phi), z_rand]).squeeze()
+
+    sampler_position = rvs
 
     @property
     def _r_dist(self):

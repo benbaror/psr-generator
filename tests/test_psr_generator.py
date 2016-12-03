@@ -5,6 +5,7 @@ from click.testing import CliRunner
 from psr_generator.cli import main
 from psr_generator.distributions import GalacticDistribution
 from psr_generator.pulsars import Pulsar
+from psr_generator.pulsars import RandomPulsar
 
 
 
@@ -21,6 +22,20 @@ def test_pulsar():
     pulsar = Pulsar(1e-3, 0, 8.3, unit=['deg', 'deg', 'kpc'],
                     frame='galactic')
     assert all(abs(pulsar.galactocentric.cartesian.xyz.value) < tol)  # pi/3600/180 * (pc/km) * (s/yr)
+
+def test_random_pulsar():
+    tol = 1e-3
+
+    pulsars = RandomPulsar(R0=4, beta=1, z0=0.2, size=10)
+    assert len(pulsars) == 10
+
+    x, y, z = pulsars.galactocentric.cartesian.xyz.value
+    r = np.sqrt((x + 8.3)**2 + y**2 + z**2)
+    assert all(abs(1 - pulsars.galactic.distance.value/r) < tol)
+
+    rpulsars = RandomPulsar(x=x, y=y, z=z, unit='kpc', frame='galactocentric')
+    pulsars = Pulsar(x=x, y=y, z=z, unit='kpc', frame='galactocentric')
+    assert all(abs(1 - rpulsars.galactic.distance.value/rpulsars.galactic.distance.value) < tol)
 
 def test_galactic_dist():
     galactic_dist = GalacticDistribution(R0=10, beta=2, z0=0.1)
