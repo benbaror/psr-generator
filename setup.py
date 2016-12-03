@@ -67,6 +67,7 @@ setup(
     install_requires=[
         'click',
         'astropy',
+        'scipy',
     ],
     extras_require={
         # eg:
