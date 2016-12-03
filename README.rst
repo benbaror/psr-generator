@@ -12,8 +12,8 @@ Overview
     * - tests
       - | |travis| |requires|
         | |coveralls| |codecov|
-    * - package
-      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+..    * - package
+..      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/psr-generator/badge/?version=latest
     :target: http://psr-generator.readthedocs.io/en/latest/?badge=latest
@@ -42,12 +42,12 @@ Modelling of the Galactic radio pulsar population
 
 * Free software: BSD license
 
-Installation
-============
+.. Installation
+.. ============
 
-::
+.. ::
 
-    pip install psr-generator
+..    pip install psr-generator
 
 Documentation
 =============
@@ -61,19 +61,5 @@ To run the all tests run::
 
     tox
 
-Note, to combine the coverage data from all the tox environments run:
-
-.. list-table::
-    :widths: 10 90
-    :stub-columns: 1
-
-    - - Windows
-      - ::
-
-            set PYTEST_ADDOPTS=--cov-append
-            tox
-
-    - - Other
-      - ::
-
-            PYTEST_ADDOPTS=--cov-append tox
+.. Note, to combine the coverage data from all the tox environments run:
+.. PYTEST_ADDOPTS=--cov-append tox
